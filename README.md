@@ -3,12 +3,11 @@
 
 ### to setup
 if you're using pip:
-
-    `pip install -r requirements.txt`
+`pip install -r requirements.txt`
 
 if you're not:
 
-    [use pip](http://pypi.python.org/pypi/pip)
+[use pip](http://pypi.python.org/pypi/pip)
 
 
 ### to use
