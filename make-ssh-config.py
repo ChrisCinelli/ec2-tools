@@ -15,11 +15,12 @@ def make_hosts_file(opts):
 
     for i in instances:
         if i.public_dns_name:
-            print "Host %s" % i.public_dns_name
-            print "    IdentityFile %s/%s"  % (opts.id_file_dir,i.key_name)
-            print "    User %s" % opts.user
-            for extra in opts.extra_args:
-                print "    %s" % extra
+            for name in [i.public_dns_name,i.ip_address] :
+                print "Host %s" % name
+                print "    IdentityFile %s/%s.pem"  % (opts.id_file_dir,i.key_name)
+                print "    User %s" % opts.user
+                for extra in opts.extra_args:
+                    print "    %s" % extra
 
 def main():
 
