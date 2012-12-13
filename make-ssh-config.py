@@ -24,7 +24,7 @@ def make_hosts_file(opts):
 
 def main():
 
-    parser = argparse.ArgumentParser("make an ssh hosts file for your all your pretty little ec2  instances. you can append the output to your .ssh config file if you want, in  ~/.ssh/config, but don't take my word for it!")
+    parser = argparse.ArgumentParser("make an ssh hosts file for your all your pretty little ec2 instances. you can append the output to your .ssh config file if you want, in  ~/.ssh/config, but don't take my word for it!")
     parser.add_argument("--id-file-dir",default="~/.ssh",required=False)
     parser.add_argument("--user",default="ubuntu",required=False)
     parser.add_argument("--region",default="eu-west-1",required=False)
